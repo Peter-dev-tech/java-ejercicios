@@ -27,6 +27,8 @@ public class CalculadoraDos {
         else System.out.println( nombre + " Operacion no valida");
 
         System.out.println( nombre + ", el resultado de tu operacion es: " + resultado);
-        
+    
+    scanner.close();
+
     }
 }

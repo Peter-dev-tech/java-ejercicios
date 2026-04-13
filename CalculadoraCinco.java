@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-public class CalculadoraTres{
-    public static void main(String[] args){
+public class CalculadoraCinco {
+    public static void main(String[] args) {
 
         Scanner calculadora = new Scanner(System.in);
 
-        System.out.println("¿Cual es tu nombre?");
+        System.out.println("¿Human@ cual es tu nombre?");
         String nombre = calculadora.nextLine();
-        
+
         System.out.println("Dame el primer numero");
         double datoUno = calculadora.nextDouble();
-        
-        System.out.println("Dame el segundo numero");
+
+        System.out.println("dame el segundo numero");
         double datoDos = calculadora.nextDouble();
-        
-        System.out.println("¿Que operacion deseas? (+,-,*,/,%)");
+
+        System.out.println("Que operacion deseas (+,-,/,*,%)");
         char operacion = calculadora.next().charAt(0);
 
         double resultado = 0;
@@ -24,14 +24,10 @@ public class CalculadoraTres{
         else if (operacion == '*') resultado = datoUno * datoDos;
         else if (operacion == '/') resultado = datoUno / datoDos;
         else if (operacion == '%') resultado = datoUno % datoDos;
-        else System.out.println(nombre + " Operacion no reconocida");
-
-        System.out.println(nombre + " el resultado de tu operacion es: " + resultado);
-
+        else System.out.println("Operador no reconocido, intenta nuevamente");
+        
+        System.out.println(nombre +  " el resultado de tu operacion es: " +  resultado);
+    
     calculadora.close();
     }
 }
-
-
-
-

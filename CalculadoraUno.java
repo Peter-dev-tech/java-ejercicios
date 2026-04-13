@@ -21,9 +21,10 @@ public class CalculadoraUno {
         else if (Operación == '*') resultado = numUno * numDos;
         else if (Operación == '/') resultado = numUno / numDos;
         else if (Operación == '%') resultado = numUno % numDos;
-        else System.out.println("Operación no válida");
+        else System.out.println("Operación no valida");
 
         System.out.println("El resultado es: " + resultado);
-
+    
+    scanner.close();
     }
 }
